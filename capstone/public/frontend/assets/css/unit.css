@@ -1,0 +1,66 @@
+.book_form {
+  background-color: rgba(185, 185, 185, 0.521);
+  width: 350px;
+  margin-left: 50px;
+  margin-top: 220px;
+  padding: 1rem;
+  margin-bottom: 60px;
+}
+.bookContainer {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+.bookCard {
+  width: 24rem;
+  height: 24rem;
+  left:190px;
+}
+
+@media (min-width: 300px) and (max-width: 427px) {
+  .bookContainer {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  .bookCard {
+    width: 180px;
+  }
+  .book_form {
+    background-color: rgba(185, 185, 185, 0.521);
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 120px;
+    padding: 1rem;
+  }
+}
+@media (min-width: 428px) and (max-width: 767px) {
+  .bookContainer {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  .bookCard {
+    width: 250px;
+  }
+  .book_form {
+    background-color: rgba(185, 185, 185, 0.521);
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 120px;
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 835px) {
+  .bookContainer {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .bookCard {
+    width: 500px;
+  }
+  .book_form {
+    background-color: rgba(185, 185, 185, 0.521);
+    width: 150px;
+    margin-left: 15px;
+    margin-top: 120px;
+    padding: 1rem;
+  }
+}

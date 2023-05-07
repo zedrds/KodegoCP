@@ -1,0 +1,314 @@
+.card {
+  width: 24rem;
+  height: 36rem;
+  border-radius: 5px;
+  margin: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 30px 5px rgba(85, 85, 85, 0.342);
+}
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  transition: opacity 0.2s ease-out;
+}
+
+.card h2 {
+  position: absolute;
+  inset: auto auto 25px 15px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+.card p,
+.card a {
+  color: black;
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+.card p {
+  inset: auto auto 80px 30px;
+}
+.card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+.card:hover h2 {
+  color: black;
+  inset: auto auto 500px 15px;
+  transition: inset 0.3s ease-out;
+}
+.card:hover p {
+  color: black;
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+.card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+.card:hover img {
+  background-color: black;
+  transition: opacity 0.3s ease-in;
+  opacity: 0.24;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.footlogo {
+  width: 10vw;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.cslideimg {
+  width: 100%;
+  height: 370px;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cardContainer {
+  margin-top: 75px;
+}
+
+.unitCard {
+  width: 80%;
+}
+
+.texts {
+  margin-top: 120px;
+}
+
+.unitInfoImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.book-cover{
+  height: 320px;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px;
+}
+.inf{
+  height: 100%;
+  margin-left:10px;
+  padding: 0px;
+  width: 25%;
+}
+.amenetiesImg{
+  height: 120px;
+  width: 100%;
+  margin-bottom: 10px;
+  object-fit:cover;
+  filter: brightness(70%);
+
+}
+
+
+.addInfoText{
+  margin:auto;
+
+}
+.cardx{
+  
+  margin:auto;
+}
+
+
+
+.amenetiesImgTextbottomleft {
+  position: absolute;
+  bottom: 8px;
+  left:35px;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 300px) and (max-width: 427px) {
+  .nav {
+    height: 10vh;
+  }
+
+  .card {
+    margin: auto;
+    width: 20rem;
+    align-content: center;
+  }
+  .footlogo {
+    width: 30vw;
+  }
+  .cslideimg {
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    border: 50px;
+  }
+  .inf{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    padding: 30px;
+  }
+
+  .unitCard {
+    width: 98%;
+    height: 100px;
+  }
+  .unitName,
+  .unitInfo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .amenetiesImg{
+  height: 200px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+}
+
+@media (min-width: 428px) and (max-width: 767px) {
+  .card {
+    margin: auto;
+    margin-top: 10px;
+    width: 25rem;
+  }
+  .card .unitCard {
+    margin: auto;
+    margin-top: 10px;
+    width: 50rem;
+  }
+  .footlogo {
+    width: 20vw;
+  }
+  .card p {
+    font-size: 23px;
+  }
+  .card h2 {
+    font-size: 30px;
+  }
+  .cslideimg {
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+    border: 50px;
+  }
+  .unitCard {
+    width: 100%;
+    height: 320px;
+  }
+  .unitName,
+  .unitInfo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .amenetiesImg{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  .inf{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    padding: 30px;
+  }
+ 
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  .card {
+    margin-top: 10px;
+    width: 30rem;
+  }
+
+  .footlogo {
+    width: 10vw;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+  .cslideimg {
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    border: 50px;
+  }
+  .unitCard {
+    width: 800px;
+    margin-left: -5px;
+    height: 400px;
+  }
+  .unitName,
+  .unitInfo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .amenetiesImg{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 801px) and (max-width: 990px) {
+  .cardContainer {
+    margin-top: 200px;
+    margin-left: 50px;
+  }
+  .cslideimg {
+    width: 80%;
+    height: 35vh;
+    margin: auto;
+    border: 50px;
+  }
+  .card {
+    margin-top: 10px;
+    width: 42rem;
+  }
+  .unitCard {
+    width: 100%;
+    height: 500px;
+  }
+  .unitName,
+  .unitInfo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .amenetiesImg{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+}
